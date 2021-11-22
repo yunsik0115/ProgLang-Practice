@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+
 // Destructors & Constructors
 /*Constructors
  * Special Member Method
@@ -16,6 +17,7 @@
  *No return type and no parameters
  * Only 1 destructor is allowed per class - cannot be overloaded
  * Useful to release memory and other resources*/
+
 class Player{
 private:
     std::string name;
