@@ -1,0 +1,9 @@
+When Objects are copied C++ must create a new object from existing object
+
+When is a copy of an object made?
+1) passing object by value as parameter
+2) returning an objecvt from a function by value
+3) constructing one object based on another of the same class
+
+C++ must have a way of accomplishing this so it provides a compiler-defined copy constructor if you don't
+

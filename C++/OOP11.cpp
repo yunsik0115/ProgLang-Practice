@@ -18,35 +18,18 @@ public:
     std::string get_name(){
         return name;
     }
-    Player();
-    Player (std::string name_val);
-    Player (std::string name_val, int health_val);
-    Player (std::string name_val, int health_val, int xp_val);
+
+    Player (std::string name_val = "None", int health_val = 0, int xp_val = 0);
+    // default values for constructor parameters
+    // cannot determine if there is Player() constructor because it don't know what to call (ambiguous)
 };
 
 
 Player :: Player (std::string name_val, int health_val, int xp_val)
-: name{name_val}, health{health_val}, xp{xp_val}
+        : name{name_val}, health{health_val}, xp{xp_val}
 {
     cout << "3 args constructor" << endl;
 }
-
-Player :: Player(std::string name_val, int health_val) :
- Player(name_val, health_val, 0)
-{
-cout << "2 args constructor" << endl;
-}
-
-Player :: Player (std::string name_val)
-        : Player(name_val, 0, 0) {
-    cout << "1 args constructor" << endl;
-}
-
-Player :: Player() :
-        Player("None",0,0){
-    cout << "No args constructor" << endl;
-}
-
 
 
 int main(){
